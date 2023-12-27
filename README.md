@@ -50,12 +50,12 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 
 ## Future Features
 
-Completition tracker - Add a way to mark exercise as completed or skipped.
-Daily stats - How many X reps of X exercise were completed on each day.
-Available Hours - When does the script notify you?
-Calories calculator - Calculate calories burnt based on Age, Height, Weight, etc.
-Progressive overload - Gradually increase rep count over time.
-Phone notifications - Get a popup notification on your phone.
+- [ ] Completition tracker - Add a way to mark exercise as completed or skipped.
+- [ ] Daily stats - How many X reps of X exercise were completed on each day.
+- [ ] Available Hours - When does the script notify you?
+- [ ] Calories calculator - Calculate calories burnt based on Age, Height, Weight, etc.
+- [ ] Progressive overload - Gradually increase rep count over time.
+- [ ] Phone notifications - Get a popup notification on your phone.
 
 ## License
 
