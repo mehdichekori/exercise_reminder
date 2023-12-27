@@ -48,8 +48,10 @@ This Python script generates notifications to remind the user to perform exercis
 Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request.
 
 
-## Future Features
+## Feature list
 
+- [x] Basic user exercise preference
+- [x] Windows notifications
 - [ ] Completition tracker - Add a way to mark exercise as completed or skipped.
 - [ ] Daily stats - How many X reps of X exercise were completed on each day.
 - [ ] Available Hours - When does the script notify you?
