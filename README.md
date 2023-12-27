@@ -18,10 +18,10 @@ This Python script generates notifications to remind the user to perform exercis
 
 2. **Install dependencies:**
 
-    Ensure you have Python installed. Install the required dependencies using pip:
+    Ensure you have Python (version 3.11.2 or higher) installed. Install the required dependencies using pip and the provided `requirements.txt` file:
 
     ```bash
-    pip install win10toast
+    pip install -r requirements.txt
     ```
 
 3. **Run the script:**
