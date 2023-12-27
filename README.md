@@ -47,6 +47,15 @@ This Python script generates notifications to remind the user to perform exercis
 
 Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request.
 
+
+## Future Features
+
+Completition tracker - Add a way to mark exercise as completed or skipped.
+Daily stats - How many X reps of X exercise were completed on each day.
+Available Hours - When does the script notify you?
+Calories calculator - Calculate calories burnt based on Age, Height, Weight, etc.
+Progressive overload - Gradually increase rep count over time.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
