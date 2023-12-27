@@ -6,11 +6,27 @@ from win10toast import ToastNotifier
 
 PREFERENCES_FILE = 'exercise_preferences.csv'
 
+"""
+Sends a Windows notification to remind the user to perform an exercise.
+
+Args:
+- exercise: The type of exercise to be performed (e.g., squats, push-ups).
+- count: The quantity of exercises to be done.
+
+Uses the win10toast library to display a notification for the specified exercise and count.
+"""
 def send_notification(exercise, count):
     toaster = ToastNotifier()
     message = f"Time to do {count} {exercise}!"
     toaster.show_toast("Take a break!", message, duration=10)
 
+
+"""
+Retrieves exercise preferences stored in a CSV file.
+
+Reads exercise preferences from the PREFERENCES_FILE (CSV) and returns a list of dictionaries
+containing exercise, quantity, and notify status.
+"""
 def get_exercise_preferences():
     exercise_prefs = []
     try:
@@ -22,13 +38,22 @@ def get_exercise_preferences():
         pass
     return exercise_prefs
 
+"""
+Saves exercise preferences to a CSV file.
+
+Writes exercise preferences (exercise, quantity, notify status) to the PREFERENCES_FILE (CSV).
+"""
 def save_exercise_preferences(exercise_prefs):
     with open(PREFERENCES_FILE, mode='w', newline='') as file:
         writer = csv.writer(file)
         for preference in exercise_prefs:
             writer.writerow([preference['exercise'], preference['quantity'], preference['notify']])
 
-       
+"""
+Prints exercise preferences to the console.
+
+Displays exercise details (exercise, quantity, notify status) from the provided list of dictionaries.
+"""       
 def print_exercise_preferences(exercise_preferences):
     print("Your exercise preferences:")
     for preference in exercise_preferences:
@@ -36,7 +61,14 @@ def print_exercise_preferences(exercise_preferences):
     print("")
 
 
+"""
+Manages exercise preferences, allows modification, and triggers notifications based on preferences.
 
+- Retrieves exercise preferences.
+- Displays current preferences and provides an option to modify.
+- Modifies exercise preferences based on user input.
+- Triggers exercise notifications based on a probability (1/5 chance per hour).
+"""
 def test_notification_with_preferences():
 
     exercise_preferences = get_exercise_preferences()
